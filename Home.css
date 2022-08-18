@@ -1,0 +1,236 @@
+@font-face {
+    font-family: nasa;
+    src: url(Font/nasalization-rg.otf);
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url(Font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url(Font/Poppins-Regular.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(image/kai-pilger-Ef6iL87-vOA-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+}
+
+.rightalign {
+    position: relative;
+    top: 10%;
+}
+
+.leftcontent {
+    padding: 20px;
+    width: 50%;
+    height: 95vh;
+    color: white;
+}
+
+.title {
+    font-size: 42px;
+    letter-spacing: -50px;
+    animation-name: stretchtext;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+font1 {
+font-family: nasa
+}
+
+font2 {
+    font-family: poppins-bold
+}
+
+.earthgif {
+    opacity: 0%;
+    position: relative;
+    left: 5%;
+    width: 570px;
+    height: 570px;
+    transition: 0.5s ease;    
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    animation-timing-function: ease;
+}
+
+.earthgif:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+
+.earthname {
+    opacity: 0%;
+    padding-top: 0px;
+    font-size: 25px;
+    font-style: italic;
+    font-family: poppins-regular;
+    position: relative;
+    left: 5%;
+    width: 560px;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+    animation-timing-function: ease;
+}
+
+.rightcontent {
+    position: relative;
+    left: 50px;
+    opacity: 0%;
+    padding: 20px;
+    border: 5px solid black;
+    width: 50%;
+    height: 95vh;
+    background: rgba(0, 0, 0, 0.5);
+    animation-name: rightmove;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+}
+
+.contenttitle {
+    color: white;
+    line-height: 31px;
+    height: 500px
+}
+
+font3 {
+    font-family: poppins-regular;
+    font-size: 20px;
+}
+
+font4 {
+    padding-top: 12px;
+    font-family: poppins-bold;
+    font-size: 60px;
+    width: 250px;
+}
+
+.descriptbox {
+    display: flex;
+    height: 100px;
+}
+
+.line {
+    position: relative;
+    top: 22px;
+    left: 8px;
+    height: 0px;
+    border: 2px solid white;
+    width: 630px;
+}
+
+.aboutearth {
+    font-family: poppins-regular;
+    font-size: 18px;
+}
+
+td > img {
+    height: 40px;
+    width: 40px;
+}
+
+td {
+    width: 200px;
+    font-family: poppins-regular;
+    font-size: 25px;
+}
+
+font6 {
+    position: relative;
+    bottom: 10px;
+}
+
+.box {
+    display: flex;
+    position: relative;
+    top: 5vh;
+}
+
+table {
+    line-height: 35px;
+}
+
+.tabletext {
+    font-family: poppins-regular;
+    text-align: right;
+    font-size: 28px;
+    line-height: 36px;
+    width: 45%;
+}
+
+.rightfooter {
+    opacity: 0%;
+    padding-top: 40px;
+    font-family: poppins-regular; 
+    color: white;
+    letter-spacing: -50px;
+    font-size: 46px;
+    animation-name: stretchtext1;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes stretchtext {
+    0% {
+        letter-spacing: -50px;
+    }
+    100% {
+        letter-spacing: 1px;
+    }
+}
+
+@keyframes stretchtext1 {
+    0% {
+        letter-spacing: -50px;
+        opacity: 0%;
+    }
+    100% {
+        letter-spacing: 15px;
+        opacity: 100%;
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+@keyframes rightmove {
+    0%{
+        left: 50px;
+        opacity: 0%;
+    }
+    100%{
+        left: 0px;
+        opacity: 100%;
+    }
+}
